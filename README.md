@@ -248,3 +248,19 @@ If utilizing this repository in academic work, please cite:
 ![Feature importance](outputs/graphs/feature_importance_rf.png)
 
 ![Confusion matrices](outputs/graphs/all_confusion_matrices.png)
+
+---
+
+## Deploy to Streamlit Community Cloud
+
+This repository is ready for a hosted Streamlit dashboard.
+
+1. Visit https://share.streamlit.io and sign in with GitHub.
+2. Create a new app and choose **abhishek-yadav-ds/RoomSense-AI**.
+3. Select branch **main** and app file **app.py**.
+4. In **Advanced settings**, choose **Python 3.13** (the version used to validate model loading).
+5. Deploy. The root `requirements.txt` lists the lightweight dashboard dependencies.
+
+For a full research/training environment, install `requirements-training.txt` instead (includes PyTorch, Keras, SHAP, notebooks and analysis packages). The cloud dashboard uses the pre-trained Random Forest and does not retrain on startup.
+
+The trained scikit-learn model uses version 1.9.1; keep the runtime version pinned until the model is re-exported and tested against another release.

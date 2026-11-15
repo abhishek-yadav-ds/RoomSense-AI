@@ -388,7 +388,7 @@ if current_page == "📊 Dashboard":
                 plot_bgcolor='rgba(0,0,0,0)',
                 annotations=[dict(text='<b>4</b><br>Classes', x=0.35, y=0.5, font_size=13, font_color='#FFFFFF', showarrow=False)]
             )
-            st.plotly_chart(fig_donut, use_container_width=True)
+            st.plotly_chart(fig_donut, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # Card 2: Sensor Insights Line Chart
@@ -432,7 +432,7 @@ if current_page == "📊 Dashboard":
                 ),
                 showlegend=False
             )
-            st.plotly_chart(fig_line, use_container_width=True)
+            st.plotly_chart(fig_line, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # Card 3: Top Feature Importance Horizontal Bars
@@ -471,7 +471,7 @@ if current_page == "📊 Dashboard":
             yaxis=dict(color='#D1CFE2', tickfont=dict(size=11), autorange="reversed"),
             showlegend=False
         )
-        st.plotly_chart(fig_feat, use_container_width=True)
+        st.plotly_chart(fig_feat, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ROW 3: (Algorithm Comparison Table & Model Performance F1 Chart)
@@ -580,7 +580,7 @@ if current_page == "📊 Dashboard":
             xaxis=dict(color='#D1CFE2', tickfont=dict(size=11)),
             showlegend=False
         )
-        st.plotly_chart(fig_bar, use_container_width=True)
+        st.plotly_chart(fig_bar, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # ROW 4: (Confusion Matrix, Evaluation Summary, Live Prediction)
@@ -614,7 +614,7 @@ if current_page == "📊 Dashboard":
             xaxis=dict(title="Predicted Class", color='#8E8AAB', tickfont=dict(size=10)),
             yaxis=dict(title="Actual Class", color='#8E8AAB', tickfont=dict(size=10), autorange="reversed")
         )
-        st.plotly_chart(fig_cm, use_container_width=True)
+        st.plotly_chart(fig_cm, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     # Evaluation Summary
@@ -731,7 +731,7 @@ elif current_page == "⚙️ Preprocessing":
 
     if os.path.exists('outputs/results/outlier_summary.csv'):
         outlier_data = pd.read_csv('outputs/results/outlier_summary.csv')
-        st.dataframe(outlier_data, use_container_width=True)
+        st.dataframe(outlier_data, width="stretch")
 
     col1, col2 = st.columns(2)
     with col1:
@@ -775,7 +775,7 @@ elif current_page == "🧠 Model Comparison":
     st.markdown("<p style='color: #8E8AAB;'>Comprehensive evaluation across 5 classical ML algorithms and 1 Keras Deep Learning MLP.</p>", unsafe_allow_html=True)
 
     if model_comp_df is not None:
-        st.dataframe(model_comp_df.style.highlight_max(axis=0, subset=['Accuracy', 'Macro_F1'], color='#10B981'), use_container_width=True)
+        st.dataframe(model_comp_df.style.highlight_max(axis=0, subset=['Accuracy', 'Macro_F1'], color='#10B981'), width="stretch")
 
     col1, col2 = st.columns(2)
     with col1:
