@@ -1,0 +1,37 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+env/
+ENV/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# IDE & System artifacts
+.vscode/
+.idea/
+.system_generated/
+.pytest_cache/
+
+
+.env
+*.env.local
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+RoomSense_AI_Submission.zip
+*.zip
+*.log
+*.tmp
+*.sqlite
+*.db
+outputs/reports/*_View.html

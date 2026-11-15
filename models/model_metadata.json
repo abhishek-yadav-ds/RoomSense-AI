@@ -1,0 +1,15 @@
+{
+  "champion_model": "Random Forest",
+  "selected_features": [
+    "S1_Light",
+    "Light_Mean",
+    "Light_Max",
+    "Light_Range",
+    "S5_CO2",
+    "S5_CO2_Slope",
+    "CO2_Change",
+    "PIR_Active_Count"
+  ],
+  "accuracy": 0.9956,
+  "macro_f1": 0.9853
+}

@@ -1,0 +1,6 @@
+Configuration,Feature_Count,Accuracy,Macro_F1,Train_Time_s,Latency_ms_per_sample
+All Sensors (16 Raw),16,0.8793,0.4761,0.697,0.05
+Temp + CO2 + PIR (7 Sensors),8,0.8934,0.3832,0.695,0.036
+CO2 + PIR (3 Sensors - Minimal),4,0.8769,0.342,0.633,0.039
+Light + Sound + PIR (10 Sensors),10,0.8873,0.5472,0.631,0.037
+Top 8 Engineered Features,8,0.869,0.3498,0.704,0.043

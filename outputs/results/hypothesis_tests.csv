@@ -1,0 +1,5 @@
+Feature,ANOVA_F_Stat,ANOVA_p_val,Kruskal_H_Stat,Kruskal_p_val,Significant (p<0.05)
+S5_CO2,2689.76,0.000e+00,3442.07,0.000e+00,Yes
+S1_Light,22393.54,0.000e+00,5325.87,0.000e+00,Yes
+S1_Temp,3515.81,0.000e+00,3551.34,0.000e+00,Yes
+S1_Sound,1987.38,0.000e+00,4163.02,0.000e+00,Yes
